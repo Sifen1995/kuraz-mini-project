@@ -1,12 +1,18 @@
 import React from 'react'
-import { Route } from 'react-router-dom'
+import { BrowserRouter, Route,Routes } from 'react-router-dom'
+import AddNew from './pages/addnew/AddNew'
+import Notes from './pages/notes/Notes'
 
-export default function Routes() {
+export default function Routing() {
   return (
-    <div>
+   
+     
        <Routes>
-         <Route path='addNew' element={""}/>
+         <Route path='/' element={<Notes/>}/>
+         <Route path='/addNew' element={<AddNew/>}/>
+        
        </Routes>
-    </div>
+      
+    
   )
 }

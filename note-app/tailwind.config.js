@@ -5,7 +5,11 @@ module.exports = {
     "./public/index.html", // If you want to scan for classes in public/index.html
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors:{
+        button:"#069AFF"
+      },
+    },
   },
   plugins: [],
 };
